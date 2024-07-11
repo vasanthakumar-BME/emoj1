@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Emoji Animation</title>
+   <style>
+      body{
+        background: black;
+    }
+    .face{
+        height: 300px;
+        width: 300px;
+        position: relative;
+        border-radius:50%;
+        background: gold;
+        margin: 100px auto;
+    }
+    .eye1{
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        border-radius:50%;
+        left:40px;
+        top: 70px;
+        background:white;
+    }
+        .eye2{
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        border-radius:50%;
+        left:180px;
+        top: 70px;
+        background:white;
+    }
+    .eyeball1{  
+        height: 30px;
+        width: 30px;
+        border-radius:50%;
+        left:65px;
+        top: 95px;
+        position: absolute;
+        background:black;
+    }
+        .eyeball2{  
+        height: 30px;
+        width: 30px;
+        border-radius:50%;
+        left:204px;
+        top: 95px;
+        position: absolute;
+        background:black;
+    }
+    .eyeball1,.eyeball2{
+        animation: updown 2s ease-in-out infinite;
+    }
+    @keyframe updown{
+        0%{
+            transform: translateY(-20px);
+        }
+        50%{
+            transform: translateY(20px);
+        }
+        100%{
+            transform: translateY(-20px);
+        }
+    }
+    .smilemouth{  
+        height:10px;
+        width:60px;
+        border-radius:20px;
+        left:120px;
+        top:210px;
+        position: absolute;
+        background:black;
+    }
+   </style>
+</head>
+<body>
+<div class="face">
+    <div class="eye1"></div>
+    <div class="eye2"></div>
+    <div class="eyeball1"></div>
+    <div class="eyeball2"></div>
+    <div class="smilemouth"></div>
+</div>
+</body>
+</html>
